@@ -1,0 +1,36 @@
+.card-box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 15px;
+  width: 95%;
+  overflow-x: scroll;
+  border: 1px solid #f1f1f1;
+  background-color: #fff;
+  padding: 10px 20px;
+  margin: 2rem 2rem;
+}
+.heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem;
+}
+.main-text {
+  font-weight: 400;
+  color: #000000;
+}
+.sub-text {
+  font-weight: 400;
+  color: #c0c0c0;
+}
+.image {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 5px;
+}
+.image-name {
+  font-size: 18px;
+}
+/* .main-wrapper{
+  overflow: hidden;
+} */
