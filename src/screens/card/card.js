@@ -7,6 +7,23 @@ function Card(props) {
 
   return (
     <div>
+      {/* <div className="container">
+        <div className="heading-wrapper">
+          <h2 className="main-text">{heading}</h2>
+          <h2 className="sub-text">{`${count}entries with carousel`}</h2>
+        </div>
+
+        <div className="card-box">
+          {imageArr?.map((item, index) => {
+            return (
+              <div key={index} className="row">
+                <img className="image" src="/4.jpeg" alt="card" />
+                <p className="image-name">Name</p>
+              </div>
+            );
+          })}
+        </div>
+      </div> */}
       <div className="container">
         <div className="heading-wrapper">
           <h2 className="main-text">Upcoming Series</h2>
@@ -23,23 +40,6 @@ function Card(props) {
           })}
         </div>
       </div>{" "}
-      {/* <div className="container">
-        <div className="heading-wrapper">
-          <h2 className="main-text">{heading}</h2>
-          <h2 className="sub-text">{`${count}entries with carousel`}</h2>
-        </div>
-
-        <div className="card-box">
-          {imageArr.map((item, index) => {
-            return (
-              <div key={index} className="row">
-                <img className="image" src="/4.jpeg" alt="card" />
-                <p className="image-name">Name</p>
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
       <div className="container">
         <div className="heading-wrapper">
           <h2 className="main-text">2021 Series</h2>
