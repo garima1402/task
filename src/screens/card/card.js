@@ -119,7 +119,9 @@ function Card() {
               >
                 <img
                   className="image"
-                  src={item?.primaryImage?.url}
+                  src={
+                    item?.primaryImage?.url ? item?.primaryImage?.url : "4.jpeg"
+                  }
                   alt="No Image"
                 />
                 <p className="image-name">{item?.titleText.text}</p>
@@ -146,7 +148,9 @@ function Card() {
               >
                 <img
                   className="image"
-                  src={item?.primaryImage?.url}
+                  src={
+                    item?.primaryImage?.url ? item?.primaryImage?.url : "4.jpeg"
+                  }
                   alt="No Image"
                 />
                 <p className="image-name">{item?.titleText.text}</p>
@@ -172,7 +176,9 @@ function Card() {
               >
                 <img
                   className="image"
-                  src={item?.primaryImage?.url}
+                  src={
+                    item?.primaryImage?.url ? item?.primaryImage?.url : "4.jpeg"
+                  }
                   alt="No Image"
                 />
                 <p className="image-name">{item?.titleText.text}</p>
@@ -198,7 +204,9 @@ function Card() {
               >
                 <img
                   className="image"
-                  src={item?.primaryImage?.url ? item?.primaryImage?.url : "4.jpeg"}
+                  src={
+                    item?.primaryImage?.url ? item?.primaryImage?.url : "4.jpeg"
+                  }
                   alt="No Image"
                 />
                 <p className="image-name">{item?.titleText.text}</p>
