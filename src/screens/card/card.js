@@ -120,7 +120,9 @@ function Card() {
                 <img
                   className="image"
                   src={
-                    item?.primaryImage?.url ? item?.primaryImage?.url : "4.jpeg"
+                    item?.primaryImage?.url
+                      ? item?.primaryImage?.url
+                      : "noImage.png"
                   }
                   alt="No Image"
                 />
@@ -149,7 +151,9 @@ function Card() {
                 <img
                   className="image"
                   src={
-                    item?.primaryImage?.url ? item?.primaryImage?.url : "4.jpeg"
+                    item?.primaryImage?.url
+                      ? item?.primaryImage?.url
+                      : "noImage.png"
                   }
                   alt="No Image"
                 />
@@ -177,7 +181,9 @@ function Card() {
                 <img
                   className="image"
                   src={
-                    item?.primaryImage?.url ? item?.primaryImage?.url : "4.jpeg"
+                    item?.primaryImage?.url
+                      ? item?.primaryImage?.url
+                      : "noImage.png"
                   }
                   alt="No Image"
                 />
@@ -205,7 +211,9 @@ function Card() {
                 <img
                   className="image"
                   src={
-                    item?.primaryImage?.url ? item?.primaryImage?.url : "4.jpeg"
+                    item?.primaryImage?.url
+                      ? item?.primaryImage?.url
+                      : "noImage.png"
                   }
                   alt="No Image"
                 />
