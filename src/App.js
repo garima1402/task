@@ -1,14 +1,22 @@
-import Main from "./screens/index.js";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./screens";
 import Card from "./screens/card/card";
-import Detail from "./screens/detail.js/index.js";
 import Header from "./screens/header";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Main />
-    </div>
+    <>
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Card />} />
+          <Route path="/detail" element={<Main />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
