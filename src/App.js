@@ -11,7 +11,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Card />} />
-          <Route path="/detail" element={<Main />}></Route>
+          <Route path="/details/:id" element={<Main />}></Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./card.css";
 import axios from "axios";
 import { Carousel } from "react-responsive-carousel";
-
+import { useNavigate } from "react-router";
 function Card() {
-  const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const navigate = useNavigate();
   const [title, setTitle] = useState();
   const [title2020, setTitle2020] = useState();
   const [title2021, setTitle2021] = useState();
@@ -112,7 +112,7 @@ function Card() {
                 <img
                   className="image"
                   src={item?.primaryImage?.url}
-                  alt="card"
+                  alt="No Image"
                 />
                 <p className="image-name">{item?.titleText.text}</p>
               </div>
@@ -128,11 +128,17 @@ function Card() {
         <div className="card-box">
           {title2022?.map((item, index) => {
             return (
-              <div key={index} className="row">
+              <div
+                key={index}
+                className="row"
+                onClick={() => {
+                  navigate(`/details/${item.id}`);
+                }}
+              >
                 <img
                   className="image"
                   src={item?.primaryImage?.url}
-                  alt="card"
+                  alt="No Image"
                 />
                 <p className="image-name">{item?.titleText.text}</p>
               </div>
@@ -152,7 +158,7 @@ function Card() {
                 <img
                   className="image"
                   src={item?.primaryImage?.url}
-                  alt="card"
+                  alt="No Image"
                 />
                 <p className="image-name">{item?.titleText.text}</p>
               </div>
@@ -172,7 +178,7 @@ function Card() {
                 <img
                   className="image"
                   src={item?.primaryImage?.url}
-                  alt="card"
+                  alt="No Image"
                 />
                 <p className="image-name">{item?.titleText.text}</p>
               </div>

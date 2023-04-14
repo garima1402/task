@@ -1,12 +1,13 @@
 import React from "react";
+import { useParams } from "react-router";
 import Description from "./description";
 import "./details.css";
 import Episode from "./episode";
 import Title from "./title";
 
 function Details() {
-  const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
+  // const { id } = useParams();
+  // console.log({id});
   return (
     <div>
       <Title image="4.jpeg" title="How I met your mother" rating="4.5 - 2021" />
