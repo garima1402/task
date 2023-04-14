@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./card.css";
 import axios from "axios";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { useNavigate } from "react-router";
 function Card() {
@@ -108,7 +109,14 @@ function Card() {
         <div className="card-box">
           {title?.map((item, index) => {
             return (
-              <div key={index} className="row">
+              // <Carousel showThumbs={false}>
+              <div
+                key={index}
+                className="row"
+                onClick={() => {
+                  navigate(`/details/${item.id}`);
+                }}
+              >
                 <img
                   className="image"
                   src={item?.primaryImage?.url}
@@ -116,6 +124,7 @@ function Card() {
                 />
                 <p className="image-name">{item?.titleText.text}</p>
               </div>
+              // </Carousel>
             );
           })}
         </div>
@@ -154,7 +163,13 @@ function Card() {
         <div className="card-box">
           {title2021?.map((item, index) => {
             return (
-              <div key={index} className="row">
+              <div
+                key={index}
+                className="row"
+                onClick={() => {
+                  navigate(`/details/${item.id}`);
+                }}
+              >
                 <img
                   className="image"
                   src={item?.primaryImage?.url}
@@ -174,10 +189,16 @@ function Card() {
         <div className="card-box">
           {title2020?.map((item, index) => {
             return (
-              <div key={index} className="row">
+              <div
+                key={index}
+                className="row"
+                onClick={() => {
+                  navigate(`/details/${item.id}`);
+                }}
+              >
                 <img
                   className="image"
-                  src={item?.primaryImage?.url}
+                  src={item?.primaryImage?.url ? item?.primaryImage?.url : "4.jpeg"}
                   alt="No Image"
                 />
                 <p className="image-name">{item?.titleText.text}</p>
