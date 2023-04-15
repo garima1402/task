@@ -68,7 +68,7 @@ function Details() {
           }
         />
         {detailData && detailData?.titleText ? (
-          <Episode  />
+          <Episode  episodeId={episode} />
         ) : (
           ""
         )}

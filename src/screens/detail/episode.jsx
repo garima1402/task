@@ -1,23 +1,20 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-function Episode() {
+function Episode({ episodeId }) {
   const [episodeData, setEpisodeData] = useState();
-  useEffect(() => {
-    getEpisode();
-    const getId = localStorage.getItem("episodeId");
-  }, []);
-  const getId = localStorage.getItem("episodeId");
 
   const optionEpisode = {
     method: "GET",
-    url: `https://moviesdatabase.p.rapidapi.com/titles/episode/${getId}`,
+    url: `https://moviesdatabase.p.rapidapi.com/titles/episode/${episodeId}`,
     headers: {
       "X-RapidAPI-Key": "f5eafb5241mshffff63e5bed6131p17b7e5jsnca6b530e270e",
       "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
     },
   };
-
+  useEffect(() => {
+    getEpisode();
+  }, []);
   const getEpisode = () => {
     axios
       .request(optionEpisode)
