@@ -1,7 +1,6 @@
 .title-container {
   height: 20rem;
-  position: relative;
-  left: 20rem;
+  margin-left: 5rem;
 }
 .title-wrapper {
   position: relative;
