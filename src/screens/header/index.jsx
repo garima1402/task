@@ -11,7 +11,7 @@ function Header() {
         <h2>Logo</h2>
       </div>
       <div className="header-content">
-        <h2 className={selected ? "" : "active"} onClick={() => handleActive()}>
+        <h2 className={ selected ? "" : "active" }  onClick={() => handleActive()}>
           Series
         </h2>
         <h2 className={selected ? "active" : ""} onClick={() => handleActive()}>

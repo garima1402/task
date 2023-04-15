@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
+  background-color: gray;
 }
 .title {
   color: black;

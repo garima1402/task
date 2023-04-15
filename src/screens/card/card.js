@@ -109,26 +109,26 @@ function Card() {
         <div className="card-box">
           {title?.map((item, index) => {
             return (
-              // <Carousel showThumbs={false}>
-              <div
-                key={index}
-                className="row"
-                onClick={() => {
-                  navigate(`/details/${item.id}`);
-                }}
-              >
-                <img
-                  className="image"
-                  src={
-                    item?.primaryImage?.url
-                      ? item?.primaryImage?.url
-                      : "noImage.png"
-                  }
-                  alt="No Image"
-                />
-                <p className="image-name">{item?.titleText.text}</p>
-              </div>
-              // </Carousel>
+              <Carousel showThumbs={false}>
+                <div
+                  key={index}
+                  className="row"
+                  onClick={() => {
+                    navigate(`/details/${item.id}`);
+                  }}
+                >
+                  <img
+                    className="image"
+                    src={
+                      item?.primaryImage?.url
+                        ? item?.primaryImage?.url
+                        : "noImage.png"
+                    }
+                    alt="No Image"
+                  />
+                  <p className="image-name">{item?.titleText.text}</p>
+                </div>
+              </Carousel>
             );
           })}
         </div>
@@ -141,24 +141,26 @@ function Card() {
         <div className="card-box">
           {title2022?.map((item, index) => {
             return (
-              <div
-                key={index}
-                className="row"
-                onClick={() => {
-                  navigate(`/details/${item.id}`);
-                }}
-              >
-                <img
-                  className="image"
-                  src={
-                    item?.primaryImage?.url
-                      ? item?.primaryImage?.url
-                      : "noImage.png"
-                  }
-                  alt="No Image"
-                />
-                <p className="image-name">{item?.titleText.text}</p>
-              </div>
+              <Carousel showThumbs={false}>
+                <div
+                  key={index}
+                  className="row"
+                  onClick={() => {
+                    navigate(`/details/${item.id}`);
+                  }}
+                >
+                  <img
+                    className="image"
+                    src={
+                      item?.primaryImage?.url
+                        ? item?.primaryImage?.url
+                        : "noImage.png"
+                    }
+                    alt="No Image"
+                  />
+                  <p className="image-name">{item?.titleText.text}</p>
+                </div>
+              </Carousel>
             );
           })}
         </div>
@@ -171,24 +173,26 @@ function Card() {
         <div className="card-box">
           {title2021?.map((item, index) => {
             return (
-              <div
-                key={index}
-                className="row"
-                onClick={() => {
-                  navigate(`/details/${item.id}`);
-                }}
-              >
-                <img
-                  className="image"
-                  src={
-                    item?.primaryImage?.url
-                      ? item?.primaryImage?.url
-                      : "noImage.png"
-                  }
-                  alt="No Image"
-                />
-                <p className="image-name">{item?.titleText.text}</p>
-              </div>
+              <Carousel showThumbs={false}>
+                <div
+                  key={index}
+                  className="row"
+                  onClick={() => {
+                    navigate(`/details/${item.id}`);
+                  }}
+                >
+                  <img
+                    className="image"
+                    src={
+                      item?.primaryImage?.url
+                        ? item?.primaryImage?.url
+                        : "noImage.png"
+                    }
+                    alt="No Image"
+                  />
+                  <p className="image-name">{item?.titleText.text}</p>
+                </div>
+              </Carousel>
             );
           })}
         </div>
@@ -201,24 +205,26 @@ function Card() {
         <div className="card-box">
           {title2020?.map((item, index) => {
             return (
-              <div
-                key={index}
-                className="row"
-                onClick={() => {
-                  navigate(`/details/${item.id}`);
-                }}
-              >
-                <img
-                  className="image"
-                  src={
-                    item?.primaryImage?.url
-                      ? item?.primaryImage?.url
-                      : "noImage.png"
-                  }
-                  alt="No Image"
-                />
-                <p className="image-name">{item?.titleText.text}</p>
-              </div>
+              <Carousel showThumbs={false}>
+                <div
+                  key={index}
+                  className="row"
+                  onClick={() => {
+                    navigate(`/details/${item.id}`);
+                  }}
+                >
+                  <img
+                    className="image"
+                    src={
+                      item?.primaryImage?.url
+                        ? item?.primaryImage?.url
+                        : "noImage.png"
+                    }
+                    alt="No Image"
+                  />
+                  <p className="image-name">{item?.titleText.text}</p>
+                </div>
+              </Carousel>
             );
           })}
         </div>
