@@ -9,6 +9,7 @@ import axios from "axios";
 function Details() {
   const { id } = useParams();
   const [detailData, setDetail] = useState();
+  const [episode, setEpisode] = useState();
 
   const options = {
     method: "GET",
@@ -29,8 +30,29 @@ function Details() {
         console.error(error);
       });
   };
+  const optionEpisode = {
+    method: "GET",
+    url: `https://moviesdatabase.p.rapidapi.com/titles/series/${id}/1`,
+    headers: {
+      "X-RapidAPI-Key": "f5eafb5241mshffff63e5bed6131p17b7e5jsnca6b530e270e",
+      "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
+    },
+  };
+  const getEpisodeId = () => {
+    axios
+      .request(optionEpisode)
+      .then(function (response) {
+        console.log(response.data.results, "tconst");
+        setEpisode(response.data.results[0]?.tconst);
+        localStorage.setItem(response.data.results[0]?.tconst, "episodeId");
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  };
   useEffect(() => {
     getDetail();
+    getEpisodeId();
   }, []);
   return (
     <div>
@@ -46,11 +68,7 @@ function Details() {
           }
         />
         {detailData && detailData?.titleText ? (
-          <Episode
-            episodeTitle={detailData?.titleText?.text}
-            episodeImg={detailData?.primaryImage?.url}
-            episodeDescription={detailData?.primaryImage?.caption?.plainText}
-          />
+          <Episode  />
         ) : (
           ""
         )}
