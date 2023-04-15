@@ -14,7 +14,7 @@ function Card() {
   const options2020 = {
     method: "GET",
     url: "https://moviesdatabase.p.rapidapi.com/titles",
-    params: { year: "2020" },
+    params: { titleType: "tvSeries", year: "2020" },
     headers: {
       "X-RapidAPI-Key": "f5eafb5241mshffff63e5bed6131p17b7e5jsnca6b530e270e",
       "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
@@ -23,7 +23,7 @@ function Card() {
   const options2021 = {
     method: "GET",
     url: "https://moviesdatabase.p.rapidapi.com/titles",
-    params: { year: "2021" },
+    params: { titleType: "tvSeries", year: "2021" },
     headers: {
       "X-RapidAPI-Key": "f5eafb5241mshffff63e5bed6131p17b7e5jsnca6b530e270e",
       "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
@@ -32,7 +32,7 @@ function Card() {
   const options2022 = {
     method: "GET",
     url: "https://moviesdatabase.p.rapidapi.com/titles",
-    params: { year: "2022" },
+    params: { titleType: "tvSeries", year: "2022" },
     headers: {
       "X-RapidAPI-Key": "f5eafb5241mshffff63e5bed6131p17b7e5jsnca6b530e270e",
       "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
@@ -41,6 +41,7 @@ function Card() {
   const options = {
     method: "GET",
     url: "https://moviesdatabase.p.rapidapi.com/titles/x/upcoming",
+    params: { titleType: "tvSeries" },
     headers: {
       "X-RapidAPI-Key": "f5eafb5241mshffff63e5bed6131p17b7e5jsnca6b530e270e",
       "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",

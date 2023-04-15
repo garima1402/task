@@ -1,5 +1,5 @@
 import React from "react";
-import Details from "./detail.js";
+import Details from "./detail";
 
 function Main() {
   return (
